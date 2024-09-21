@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styleproj.css">
+  <title>Document</title>
+  <style>
+    *{
+padding: 0%;
+}
+.accounts{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.logo{
+  background-color: rgb(247, 0, 255);
+  display: flex;
+ justify-content: center;
+  text-align: center;
+}
+
+.wholelogin{
+  /* background-image: url(data:image/jpeg;base64,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); */
+  /* background-image: transparent; */
+}
+.login{
+  height: 400px;
+  width: 350px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 1px;
+  border-radius: 5px;
+  /* align-items: center; */
+  text-align: center;
+  /* justify-content: space-around; */
+  margin-top: 90px;
+}
+
+input{
+  margin-bottom: 10px;
+  height: 35px;
+  width: 250px;
+  border-radius: 5px;
+  border: solid 1px;
+  /* outline: transparent; */
+
+}
+
+input:focus{
+  outline-color: transparent;
+  box-shadow: 0px 0px 5px rgb(242, 0, 255);
+ 
+}
+
+.lbutton{
+  width: 250px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: black;
+  /* text-decoration:dotted; */
+  font-weight: bolder;
+  color: white;
+  border: solid 1px;
+  cursor: pointer;
+}
+
+.lbutton:hover{
+  color: white;
+}
+
+.new{
+  width:100;
+  border-bottom: 1px solid #000;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+  /* text-align: center; */
+
+}
+.new span{
+  background-color: rgb(255, 255, 255);
+  padding: 0 10px;
+
+}
+.newuser{
+  padding: 20px ;
+}
+a{
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px; ;
+}
+
+
+
+
+
+/* homepage css */
+
+/* .logo{
+  color: rgb(255, 153, 0);
+  margin-left: 100%;
+} */
+  </style>
+</head>
+<body>
+<div class="wholelogin">
+  <div class="login">
+    <h2>Create a new account</h2>
+    <input type="text" placeholder="Username" required>
+    <input type="text" placeholder="Email" required>
+    <input type="number" placeholder="+91" required><br>
+    <button class="lbutton">Register</button>
+    <br>
+    <br>
+    <p class="new"><span>OR</e-Commerce></p></span></p>
+    <div class="accounts">
+        <div> <img src="/Images/google.jpeg" alt="" width="20px"> </div>
+        <div><img src="/Images/github.png" alt="" width="20px"></div>
+        <div><img src="/Images/linkedin.png" alt="" width="20px">
+        </div>
+      </div>
+  </div>
+
+</div>  
+</body>
+</html>
