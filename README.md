@@ -1,0 +1,1 @@
+This project is a front-end website dedicated to showcasing a variety of chocolates. The platform offers a visually appealing and user-friendly interface, allowing users to browse through different types of chocolates, explore their details, and make selections based on preferences. 
